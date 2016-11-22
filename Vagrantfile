@@ -78,7 +78,7 @@ Vagrant.configure(2) do |config|
 	
 	mkdir /vagrant/Threadfix
 
-	docker run --name threadfix -it -d -p 8443:8443 -v /vagrant/Threadfix:/Threadfix jmbmxer/threadfix-docker start
+	docker run --name threadfix -it -d -p 8443:8443 jmbmxer/threadfix-docker start
    SHELL
   #config.vm.provision "file" source: "vagrant_data\config\VNC\xstartup", destination: ".vnc/xstartup"
   #config.vm.provision :file do |file|
